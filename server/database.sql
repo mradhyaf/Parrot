@@ -1,6 +1,8 @@
-CREATE DATABASE mysocialmedia;
+CREATE DATABASE parrot;
+
+DROP TABLE IF EXISTS posts;
 
 CREATE TABLE posts(
     id SERIAL PRIMARY KEY,
-    description VARCHAR(280)
+    description VARCHAR(280) NOT NULL
 );
